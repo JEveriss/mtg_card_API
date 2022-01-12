@@ -1,0 +1,18 @@
+Use the MtG API to get a random card from their database
+
+Create a button that generates a new card
+- same size and position
+- - add a switch that shows a bigger version of the card
+
+have a list of information about the card
+- all info standar for each
+- - have a dropdown for the info you want to see
+
+change colour depending on the card
+- have the background the same colour as the card
+- - if the card is multicolour then have the colours blend
+
+make it responsive so that it can be mobile too
+
+save a card to a list to be viewed later
+- have a save function to create a list of the saved cards

@@ -1,0 +1,160 @@
+:root {
+  --main-colour: #f0f8ff;
+  --main-font: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--main-colour);
+  font-family: var(--main-font);
+  font-size: 28px;
+  max-width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-size: 52px;
+  font-style: italic;
+  margin: 8px 0 0 0;
+}
+#mtg-image {
+  max-width: 50%;
+}
+
+h2 {
+  border-style: solid;
+  border-color: #000;
+  color: #fffcf4;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  padding-top: 4px;
+  padding-left: 4px;
+  margin: 0;
+}
+
+button {
+  font-family: var(--main-font);
+  font-weight: bold;
+  height: 38px;
+}
+
+/* GRID STYLES */
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 188px 60px 48px auto 60px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "t t t t t t t t t t t t"
+    "b b b b s j j j j j j j"
+    "c c c c i i i i i i i i"
+    "f f f f f f f f f f f f";
+}
+.myClass {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 188px 60px 48px auto 184px 104px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "t t t t t t t t t t t t"
+    "b b b b s j j j j j j j"
+    ". . c c c c c c c c c ."
+    "i i i i i i i i i i i i"
+    "f f f f f f f f f f f f";
+}
+
+.stylez {
+  border-radius: 4.7%;
+  height: 300px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.733);
+}
+
+.big-style {
+  border-radius: 4.7%;
+  height: 100%;
+}
+
+header {
+  grid-area: h;
+}
+
+.title {
+  grid-area: t;
+}
+
+.button {
+  grid-area: b;
+}
+
+input {
+  height: 30px;
+  width: 30px;
+}
+
+.switch {
+  grid-area: s;
+}
+
+.switch-text {
+  grid-area: j;
+  padding-top: 6px;
+}
+
+.card {
+  grid-area: c;
+}
+
+.info {
+  grid-area: i;
+  margin-left: -2px;
+}
+
+footer {
+  grid-area: f;
+  padding-top: 10px;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+/* STYLES ONCE BOX IS CHECKED */
+
+/* 
+
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+
+/* 
+
+when box is checked it employs myClass
+create a new class for the bigger image
+add the new class to the js
+
+*/
