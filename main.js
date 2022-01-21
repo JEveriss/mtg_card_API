@@ -46,26 +46,27 @@ async function fetchCard() {
     cardValue.innerText = "Value Unavailable";
   }
 
-  const cardColour = data.color_identity[0];
+  const cardColour = data.color_identity;
   console.log("Card Colour = " + cardColour);
+  const nameBackground = document.querySelector("h2");
 
   if (cardColour === "W") {
-    document.querySelector("h2").style.backgroundColor = "#fff";
+    nameBackground.style.backgroundColor = "#fff";
     document.querySelector("#wubrg").innerText = "White";
   } else if (cardColour === "U") {
-    document.querySelector("h2").style.backgroundColor = "#68b2f7";
+    nameBackground.style.backgroundColor = "#68b2f7";
     document.querySelector("#wubrg").innerText = "Colour - Blue";
   } else if (cardColour === "B") {
-    document.querySelector("h2").style.backgroundColor = "#000";
+    nameBackground.style.backgroundColor = "#000";
     document.querySelector("#wubrg").innerText = "Colour - Black";
   } else if (cardColour === "R") {
-    document.querySelector("h2").style.backgroundColor = "#9c1919";
+    nameBackground.style.backgroundColor = "#9c1919";
     document.querySelector("#wubrg").innerText = "Colour - Red";
   } else if (cardColour === "G") {
-    document.querySelector("h2").style.backgroundColor = "#319949";
+    nameBackground.style.backgroundColor = "#319949";
     document.querySelector("#wubrg").innerText = "Colour - Green";
   } else if (cardColour === undefined) {
-    document.querySelector("h2").style.backgroundColor = "#f0f8ff";
+    nameBackground.style.backgroundColor = "#f0f8ff";
     document.querySelector("#wubrg").innerText = "Colourless";
   } else {
   }
