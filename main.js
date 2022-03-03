@@ -52,7 +52,7 @@ async function fetchCard() {
 
   if (cardColour === "W") {
     nameBackground.style.backgroundColor = "#fff";
-    document.querySelector("#wubrg").innerText = "White";
+    document.querySelector("#wubrg").innerText = "Colour - White";
   } else if (cardColour === "U") {
     nameBackground.style.backgroundColor = "#68b2f7";
     document.querySelector("#wubrg").innerText = "Colour - Blue";
