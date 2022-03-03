@@ -66,7 +66,7 @@ button {
     "h h h h h h h h h h h h"
     "t t t t t t t t t t t t"
     "b b b b s j j j j j j j"
-    ". . c c c c c c c c c ."
+    ". c c c c c c c c c c ."
     "i i i i i i i i i i i i"
     "f f f f f f f f f f f f";
 }
@@ -126,35 +126,4 @@ html {
   overflow-y: scroll;
 }
 
-/* STYLES ONCE BOX IS CHECKED */
 
-/* 
-
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-x
-
-/* 
-
-when box is checked it employs myClass
-create a new class for the bigger image
-add the new class to the js
-
-*/

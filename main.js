@@ -46,7 +46,7 @@ async function fetchCard() {
     cardValue.innerText = "Value Unavailable";
   }
 
-  const cardColour = data.color_identity;
+  const cardColour = data.color_identity[0];
   console.log("Card Colour = " + cardColour);
   const nameBackground = document.querySelector("h2");
 
