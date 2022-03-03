@@ -110,6 +110,8 @@ input {
 
 .card {
   grid-area: c;
+  display: grid;
+  justify-content: center;
 }
 
 .info {
@@ -125,5 +127,3 @@ footer {
 html {
   overflow-y: scroll;
 }
-
-
